@@ -9,16 +9,15 @@ chcp 65001
 :: chcp 936
 
 :: 获取bat文件所在的位置并进入
-echo 路径：%~dp0
+echo %~dp0
 cd /d %~dp0
-:: dir
+dir
 
 :: 清屏
 cls
 
-:: 命令从此处开始
+:: 命令从此处开始，非系统自带命令需要使用call
 echo 当前时间: %date:~0,4%-%date:~5,2%-%date:~8,2% %time:~0,2%:%time:~3,2%:%time:~6,2%.%time:~9,2%
-:: 非系统自带命令需要使用call
 call hexo c
 call hexo g -d
 pause

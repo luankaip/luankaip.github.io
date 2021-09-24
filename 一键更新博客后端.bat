@@ -17,9 +17,8 @@ cd /d %~dp0
 cls
 
 :: 命令从此处开始
-set time=%date:~0,4%-%date:~5,2%-%date:~8,2% %time:~0,2%:%time:~3,2%:%time:~6,2%.%time:~9,2%
-echo %time%
+:: 非系统自带命令需要使用call
 call git add .
-call git commit -m "%time%" .
+call git commit -m "%date:~0,4%-%date:~5,2%-%date:~8,2% %time:~0,2%:%time:~3,2%:%time:~6,2%.%time:~9,2%" .
 call git push git@github.com:luankaip/luankaip.github.io.git blog
 pause

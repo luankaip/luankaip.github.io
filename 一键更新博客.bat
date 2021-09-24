@@ -17,9 +17,8 @@ cd /d %~dp0
 cls
 
 :: 命令从此处开始
-set time=%date:~0,4%-%date:~5,2%-%date:~8,2% %time:~0,2%:%time:~3,2%:%time:~6,2%.%time:~9,2%
-echo %time%
-:: call hexo c
+echo 当前时间: %date:~0,4%-%date:~5,2%-%date:~8,2% %time:~0,2%:%time:~3,2%:%time:~6,2%.%time:~9,2%
 :: 非系统自带命令需要使用call
-:: call hexo g -d
+call hexo c
+call hexo g -d
 pause

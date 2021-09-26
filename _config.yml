@@ -3,18 +3,15 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-# title: Hexo
 title: rickey # 网站标题
-# subtitle: ''
 subtitle: '的个人博客' # 网站副标题
 description: 'demo to blog' # 网站描述
-keywords:
+keywords: Java, MySQL, Linux, Debian, HTML, CSS, JavaScript, JSON, Node.js, Vue.js, Git # 网站关键词
 author: rickey # 作者
-# language: en
 language: zh-CN # 指定语言，会影响主题显示的语言，按需修改
-timezone: '' # 网站时区，默认使用电脑的时区
+timezone: 'Asia/Shanghai' # 网站时区，默认使用电脑的时区
 
-# URL
+# URL 这项暂不配置，绑定域名后，欲创建sitemap.xml需要配置该项
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: http://example.com
 permalink: :year/:month/:day/:title/
@@ -24,8 +21,8 @@ pretty_urls:
   trailing_html: true # Set to false to remove trailing '.html' from permalinks
 
 # Directory
-source_dir: source
-public_dir: public
+source_dir: source # 资源文件夹名称
+public_dir: public # 存放生成的站点的网页的文件夹
 tag_dir: tags
 archive_dir: archives
 category_dir: categories
@@ -34,15 +31,15 @@ i18n_dir: :lang
 skip_render:
 
 # Writing
-new_post_name: :title.md # File name of new posts
-default_layout: post
+new_post_name: :title=[:year-:month-:day].md # 新创建的文章名称
+default_layout: post # 预设的布局格式
 titlecase: false # Transform title into titlecase
 external_link:
-  enable: true # Open external links in new tab
-  field: site # Apply to the whole site
+  enable: true # 在新标签中打开链接
+  field: site # 对整个网站(site)生效或仅对文章(post)生效
   exclude: ''
-filename_case: 0
-render_drafts: false
+filename_case: 0 # 把文件名称转换为(1)小写或(2)大写
+render_drafts: false # 显示草稿
 post_asset_folder: true
 relative_link: false
 future: true

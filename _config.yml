@@ -5,7 +5,7 @@
 # Site
 title: rickey # 网站标题
 subtitle: '的个人博客' # 网站副标题
-description: 'demo to blog' # 网站描述
+description: 'demo to blog' # 网站描述，不会显示，仅搜索引擎调用
 keywords: Java, MySQL, Linux, Debian, HTML, CSS, JavaScript, JSON, Node.js, Vue.js, Git # 网站关键词
 author: rickey # 作者
 language: zh-CN # 指定语言，会影响主题显示的语言，按需修改
@@ -14,7 +14,7 @@ timezone: 'Asia/Shanghai' # 网站时区，默认使用电脑的时区
 # URL 这项暂不配置，绑定域名后，欲创建sitemap.xml需要配置该项
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: http://example.com
-permalink: :year/:month/:day/:title/
+permalink: :year-:month-:day/:title/ # 配置永久链接
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -31,7 +31,7 @@ i18n_dir: :lang
 skip_render:
 
 # Writing
-new_post_name: :title=[:year-:month-:day].md # 新创建的文章名称
+new_post_name: :title❖[:year-:month-:day].md # 新创建的文章名称
 default_layout: post # 预设的布局格式
 titlecase: false # Transform title into titlecase
 external_link:
@@ -40,7 +40,7 @@ external_link:
   exclude: ''
 filename_case: 0 # 把文件名称转换为(1)小写或(2)大写
 render_drafts: false # 显示草稿
-post_asset_folder: true
+post_asset_folder: true # 为每篇博客创建单独的资源文件夹
 relative_link: false
 future: true
 highlight:
@@ -62,7 +62,7 @@ prismjs:
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
-  per_page: 10
+  per_page: 10 # 默认分页时每页显示的文章数量
   order_by: -date
 
 # Category & Tag
@@ -78,18 +78,19 @@ meta_generator: true
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
 ## http://momentjs.com/docs/#/displaying/format/
-date_format: YYYY-MM-DD
-time_format: HH:mm:ss
+date_format: YYYY-MM-DD # 默认日期格式
+time_format: HH:mm:ss # 默认时间格式
 ## updated_option supports 'mtime', 'date', 'empty'
 updated_option: 'mtime'
 
 # Pagination
 ## Set per_page to 0 to disable pagination
-per_page: 10
+per_page: 10 # 默认分页时每页显示的文章数量
 pagination_dir: page
 
 # Include / Exclude file(s)
 ## include:/exclude: options only apply to the 'source/' folder
+# 忽略目录
 include:
 exclude:
 ignore:
@@ -102,6 +103,6 @@ theme: landscape
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: 'git'
-  repo: git@github.com:luankaip/luankaip.github.io.git
-  branch: main
+  type: 'git' # 部署在github
+  repo: git@github.com:luankaip/luankaip.github.io.git # git仓库目录
+  branch: main # 分支名

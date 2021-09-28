@@ -13,9 +13,10 @@ timezone: 'Asia/Shanghai' # 网站时区，默认使用电脑的时区
 
 # URL 这项暂不配置，绑定域名后，欲创建sitemap.xml需要配置该项
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+#url: http://example.com
+url: https://luankaip.github.io/
 permalink: :year-:month-:day/:title/ # 配置永久链接
-permalink_defaults:
+permalink_defaults: :year-:month-:day/:title/
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
   trailing_html: true # Set to false to remove trailing '.html' from permalinks

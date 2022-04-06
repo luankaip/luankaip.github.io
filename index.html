@@ -106,13 +106,13 @@
 <li>将长度定义在外部</li>
 <li>将长度与<code>index</code>一起定义</li>
 </ol>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// array为类数组对象</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> index = <span class="number">0</span>; index &lt; array.length; index++) &#123; <span class="built_in">console</span>.log(index); &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 优化方法一：将长度定义在外部</span></span><br><span class="line"><span class="keyword">let</span> Length = array.length;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> index = <span class="number">0</span>; index &lt; Length; index++) &#123; <span class="built_in">console</span>.log(index); &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 优化方法二：将长度与index一起定义</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> index = <span class="number">0</span>, Length = array.length; index &lt; Length; index++) &#123; <span class="built_in">console</span>.log(index); &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// array为类数组对象</span></span><br><span class="line"><span class="keyword">var</span> array = &#123; <span class="attr">length</span>: <span class="number">5</span> &#125;;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> index = <span class="number">0</span>; index &lt; array.length; index++) &#123; <span class="built_in">console</span>.log(index); &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 优化方法一：将长度定义在外部</span></span><br><span class="line"><span class="keyword">let</span> Length = array.length;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> index = <span class="number">0</span>; index &lt; Length; index++) &#123; <span class="built_in">console</span>.log(index); &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 优化方法二：将长度与index一起定义</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> index = <span class="number">0</span>, Length = array.length; index &lt; Length; index++) &#123; <span class="built_in">console</span>.log(index); &#125;</span><br></pre></td></tr></table></figure>
 
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://luankaip.github.io/2022-04-06/22-26-14/JS%E4%BC%98%E5%8C%96-for%E5%BE%AA%E7%8E%AF%E9%81%8D%E5%8E%86%E7%B1%BB%E6%95%B0%E7%BB%84/" data-id="cl1noawvr0003dgw7ega93rab" data-title="JS优化:for循环遍历类数组" class="article-share-link">分享</a>
+      <a data-url="https://luankaip.github.io/2022-04-06/22-26-14/JS%E4%BC%98%E5%8C%96-for%E5%BE%AA%E7%8E%AF%E9%81%8D%E5%8E%86%E7%B1%BB%E6%95%B0%E7%BB%84/" data-id="cl1notqfm0002osw786n7eu9i" data-title="JS优化:for循环遍历类数组" class="article-share-link">分享</a>
       
       
       
@@ -154,7 +154,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://luankaip.github.io/2022-03-14/09-16-56/%E6%89%93%E5%BC%80web%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" data-id="cl1noawvy0009dgw73y7oaibn" data-title="打开web设计模式" class="article-share-link">分享</a>
+      <a data-url="https://luankaip.github.io/2022-03-14/09-16-56/%E6%89%93%E5%BC%80web%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" data-id="cl1notqfy0009osw7dfabe317" data-title="打开web设计模式" class="article-share-link">分享</a>
       
       
       
@@ -192,7 +192,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://luankaip.github.io/2021-09-29/19-18-22/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/" data-id="cl1noawvv0006dgw74ioxhjiq" data-title="我的博客" class="article-share-link">分享</a>
+      <a data-url="https://luankaip.github.io/2021-09-29/19-18-22/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/" data-id="cl1notqfw0007osw7eqwb3uum" data-title="我的博客" class="article-share-link">分享</a>
       
       
       
@@ -230,7 +230,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://luankaip.github.io/2021-09-29/15-18-30/page/" data-id="cl1noawvx0008dgw71d6j9rgs" data-title="page" class="article-share-link">分享</a>
+      <a data-url="https://luankaip.github.io/2021-09-29/15-18-30/page/" data-id="cl1notqfu0006osw73qmj05bu" data-title="page" class="article-share-link">分享</a>
       
       
       
@@ -280,7 +280,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://luankaip.github.io/2021-09-22/20-18-36/my-first-blog/" data-id="cl1noawvs0004dgw79t9y4ewu" data-title="my first blog" class="article-share-link">分享</a>
+      <a data-url="https://luankaip.github.io/2021-09-22/20-18-36/my-first-blog/" data-id="cl1notqfp0003osw74pgo5gov" data-title="my first blog" class="article-share-link">分享</a>
       
       
       
@@ -331,7 +331,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://luankaip.github.io/2021-09-22/18-20-17/hello-world/" data-id="cl1noawvp0002dgw7972rdmbv" data-title="Hello World" class="article-share-link">分享</a>
+      <a data-url="https://luankaip.github.io/2021-09-22/18-20-17/hello-world/" data-id="cl1notqfs0005osw7dmb2ck7t" data-title="Hello World" class="article-share-link">分享</a>
       
       
       
